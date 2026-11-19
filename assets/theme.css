@@ -1,0 +1,332 @@
+#app [data-od-dialog] {
+    font-family: var(--od-fontFamily) !important;
+    font-size: var(--od-font) !important;
+    font-weight: var(--od-weight) !important;
+    font-style: normal !important;
+    color: var(--od-text) !important;
+}
+#app [data-od-dialog] *,
+#app [data-od-dialog] *:before,
+#app [data-od-dialog] *:after {
+    font-family: var(--od-fontFamily) !important;
+    font-weight: var(--od-weight) !important;
+    font-style: normal !important;
+    text-transform: none !important;
+    letter-spacing: 0 !important;
+    text-shadow: none !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+}
+#app [data-od-dialog][data-od-animations='off'] *,
+#app [data-od-dialog][data-od-animations='off'] {
+    animation: none !important;
+    transition: none !important;
+}
+#app [data-od-dialog][data-od-animations='off'][class*='-leave-'],
+#app [data-od-dialog][data-od-animations='off'] [class*='-leave-'] {
+    visibility: hidden !important;
+    pointer-events: none !important;
+}
+#app [data-od-dialog] .modal-wrapper {
+    max-width: 96vw !important;
+}
+#app [data-od-dialog] .modal-container-wrapper {
+    display: inline-block !important;
+    background: transparent !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+    min-width: var(--od-windowWidth) !important;
+    max-width: 96vw !important;
+}
+#app [data-od-dialog] .modal-container {
+    border: 0 !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+}
+#app [data-od-dialog] .modal__content {
+    padding: 0 !important;
+}
+#app [data-od-dialog] .modal__title {
+    display: block !important;
+    height: var(--od-headerHeight) !important;
+    box-sizing: border-box !important;
+    padding: 5px 6px 0 !important;
+    margin: 0 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: var(--od-header) !important;
+    color: var(--od-title) !important;
+    font-size: var(--od-titleFont) !important;
+    font-weight: var(--od-weight) !important;
+    line-height: 20px !important;
+    overflow: hidden !important;
+}
+#app [data-od-dialog] .modal__title p {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+#app [data-od-dialog] .modal__title * {
+    font-size: var(--od-titleFont) !important;
+}
+#app [data-od-dialog] .window__container {
+    margin: 0 !important;
+    padding: var(--od-padding) 5px !important;
+    background-color: var(--od-body) !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    color: var(--od-text) !important;
+    font-size: var(--od-font) !important;
+    font-weight: var(--od-weight) !important;
+}
+#app [data-od-dialog] .window__subtitle {
+    color: var(--od-muted) !important;
+    font-size: var(--od-font) !important;
+    margin: 0 10px 10px !important;
+}
+#app [data-od-dialog] .window__content-container,
+#app [data-od-dialog] .window-input__text-container {
+    height: auto !important;
+    min-height: 0 !important;
+    min-width: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: 94vw !important;
+}
+#app [data-od-dialog] .scrollable-container__container {
+    max-height: var(--od-listHeight) !important;
+    height: auto !important;
+}
+#app [data-od-dialog][data-od-kind='list'] .window__content-container,
+#app [data-od-dialog][data-od-kind='table'] .window__content-container {
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+}
+#app [data-od-dialog] .window__content {
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    max-height: none !important;
+    max-width: 94vw !important;
+    color: var(--od-text) !important;
+    font-size: var(--od-font) !important;
+}
+#app [data-od-dialog] .window__content_empty {
+    margin: 0 !important;
+}
+#app [data-od-dialog][data-od-kind='text'] .window__content {
+    padding: 0 !important;
+}
+#app [data-od-dialog] .window-text__item,
+#app [data-od-dialog] .window-text__item-col,
+#app [data-od-dialog] .window-input__text {
+    font-size: var(--od-font) !important;
+    font-weight: var(--od-weight) !important;
+    line-height: normal !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    color: var(--od-text) !important;
+}
+#app [data-od-dialog] .window-input__text-wrapper {
+    padding: 0 10px 10px !important;
+}
+#app [data-od-dialog] .window-text__item-col p,
+#app [data-od-dialog] .window-input__text p {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+#app [data-od-dialog] .window-list,
+#app [data-od-dialog] .window-table {
+    background-color: var(--od-input) !important;
+    color: var(--od-listText) !important;
+    border-width: var(--od-listBorderWidth) !important;
+    border-style: solid !important;
+    border-color: var(--od-border) !important;
+    border-radius: var(--od-radius) !important;
+    box-sizing: border-box !important;
+    padding: 3px !important;
+    height: auto !important;
+    min-height: 200px !important;
+    max-height: none !important;
+    font-size: var(--od-listFont) !important;
+}
+#app [data-od-dialog] .window-table__item,
+#app [data-od-dialog] .window-list__item {
+    border: 0 !important;
+    border-radius: 0 !important;
+    box-sizing: border-box !important;
+    background: transparent !important;
+    color: var(--od-listText) !important;
+    height: var(--od-rowHeight) !important;
+    min-height: var(--od-rowHeight) !important;
+    margin: 0 !important;
+    padding: 3px !important;
+    font-size: var(--od-listFont) !important;
+    font-weight: var(--od-weight) !important;
+    cursor: pointer !important;
+}
+#app [data-od-dialog] .window-table__item.selected,
+#app [data-od-dialog] .window-table__item:hover,
+#app [data-od-dialog] .window-list__item.selected,
+#app [data-od-dialog] .window-list__item:hover {
+    background-color: var(--od-accent) !important;
+}
+#app [data-od-dialog] .window-table__head {
+    height: var(--od-rowHeight) !important;
+    color: var(--od-listText) !important;
+}
+#app [data-od-dialog] .window-table__col {
+    justify-content: flex-start !important;
+    text-align: left !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    min-width: 100px !important;
+    color: var(--od-listText) !important;
+    font-size: var(--od-listFont) !important;
+    font-weight: var(--od-weight) !important;
+    line-height: 20px !important;
+}
+#app [data-od-dialog] .window-table__col p {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+#app [data-od-dialog] .window-list__item--title,
+#app [data-od-dialog] .window-list__item--text {
+    font-size: var(--od-listFont) !important;
+    margin: 0 !important;
+    line-height: 20px !important;
+}
+#app [data-od-dialog] .window__buttons {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin: 15px 0 0 !important;
+    padding: 0 !important;
+}
+#app [data-od-dialog] .window__buttons .controls-button__container,
+#app [data-od-dialog] .window__paginate .controls-button__container {
+    position: relative !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-sizing: border-box !important;
+    background-color: var(--od-button) !important;
+    color: var(--od-buttonText) !important;
+    border-width: var(--od-borderWidth) !important;
+    border-style: solid !important;
+    border-color: var(--od-border) !important;
+    border-radius: var(--od-radius) !important;
+    min-width: var(--od-buttonWidth) !important;
+    max-width: none !important;
+    height: var(--od-buttonHeight) !important;
+    margin: 0 var(--od-gap) !important;
+    padding: 3px 2px !important;
+    cursor: pointer !important;
+}
+#app [data-od-dialog] .controls-button__container-text {
+    pointer-events: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    color: var(--od-buttonText) !important;
+    font-size: var(--od-font) !important;
+    font-weight: var(--od-weight) !important;
+    line-height: normal !important;
+}
+#app [data-od-dialog] .controls-button__container:hover {
+    border-color: var(--od-accent) !important;
+}
+#app [data-od-dialog] .controls-button__container:active {
+    border-color: #7a8da3 !important;
+}
+#app [data-od-dialog] .window-input {
+    margin: 10px 10px 0 !important;
+}
+#app [data-od-dialog] .input-field {
+    background: transparent !important;
+    border: 0 !important;
+    padding: 0 !important;
+}
+#app [data-od-dialog] input,
+#app [data-od-dialog] textarea {
+    box-sizing: border-box !important;
+    background-color: var(--od-input) !important;
+    color: var(--od-inputText) !important;
+    border: var(--od-borderWidth) solid var(--od-border) !important;
+    border-radius: var(--od-radius) !important;
+    padding: 7px 3px !important;
+    width: 100% !important;
+    height: var(--od-inputHeight) !important;
+    font-size: var(--od-inputFont) !important;
+    line-height: normal !important;
+}
+#app [data-od-dialog] input[aria-invalid='true'],
+#app [data-od-dialog] .input-field_error input {
+    border-color: var(--od-error) !important;
+}
+#app [data-od-dialog] .input-field_success input {
+    border-color: var(--od-success) !important;
+}
+#app [data-od-dialog] .window__paginate {
+    margin: 10px 0 0 !important;
+}
+#app [data-od-dialog] .controls-button__container .controls-button {
+    display: block !important;
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    opacity: 0 !important;
+    z-index: 2 !important;
+}
+#app [data-od-dialog] .modal-overlay {
+    background: var(--od-overlay) !important;
+}
+#app [data-od-dialog] .scrollable-container__scrollbar-thumb {
+    background: var(--od-accent) !important;
+    border: 1px solid var(--od-border) !important;
+    border-radius: var(--od-radius) !important;
+}
+#app [data-od-dialog] .scrollable-container-thumb {
+    background-color: var(--od-accent) !important;
+    background-image: none !important;
+    border: 1px solid var(--od-border) !important;
+    border-radius: var(--od-radius) !important;
+}
+#app [data-od-dialog] .scrollable-container__rail_y {
+    width: var(--od-scrollbar) !important;
+}
+#app [data-od-dialog] .scrollable-container-thumb-decoration,
+#app [data-od-dialog] .scrollable-container-thumb-shadow {
+    display: none !important;
+}
+#app [data-od-dialog] .modal__pattern-wrapper,
+#app [data-od-dialog] .modal-overlay__light,
+#app [data-od-dialog] .modal-light,
+#app [data-od-dialog] .graffiti-pattern,
+#app [data-od-dialog] .confetti-background,
+#app [data-od-dialog] .modal-overlay__btn {
+    display: none !important;
+}
+#app [data-od-dialog][data-od-colors='replace'] p,
+#app [data-od-dialog][data-od-colors='replace'] span {
+    color: var(--od-text) !important;
+}
+#app [data-od-dialog][data-od-colors='replace'] .window-table__col p,
+#app [data-od-dialog][data-od-colors='replace'] .window-table__col span {
+    color: var(--od-listText) !important;
+}
+
+#app [data-od-dialog] .window-table__col p,
+#app [data-od-dialog] .window-table__col span {
+    font-size: var(--od-listFont) !important;
+}
+#app [data-od-dialog] .window__description,
+#app [data-od-dialog] .window__description p,
+#app [data-od-dialog] .window__description span {
+    font-size: var(--od-font) !important;
+}

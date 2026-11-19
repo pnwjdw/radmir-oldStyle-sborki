@@ -1,0 +1,11 @@
+/target/
+/.tools/
+
+last-error.txt
+launcher-error.txt
+status.json
+profile.ini
+/bin/settings.ini
+
+*.log
+*.pdb

@@ -1,0 +1,110 @@
+#app [data-od-panel],
+#app [data-od-panel] * {
+    font-family: var(--od-fontFamily) !important;
+    font-weight: var(--od-weight) !important;
+    font-style: normal !important;
+    letter-spacing: normal !important;
+    text-shadow: none !important;
+}
+#app [data-od-panel] [data-od-surface],
+#app [data-od-panel][data-od-surface] {
+    background: var(--od-body) !important;
+    border: var(--od-borderWidth) solid var(--od-border) !important;
+    border-radius: var(--od-radius) !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+    color: var(--od-text) !important;
+}
+#app [data-od-panel] [class$='__title'],
+#app [data-od-panel] .dice-modal__title,
+#app [data-od-panel] .modal__title {
+    font-size: var(--od-titleFont) !important;
+    line-height: 1.3 !important;
+    color: var(--od-title) !important;
+    background: var(--od-header) !important;
+    border-radius: 0 !important;
+    text-transform: none !important;
+    padding: 7px 10px !important;
+    box-sizing: border-box !important;
+}
+#app [data-od-panel] input,
+#app [data-od-panel] textarea {
+    font-size: var(--od-inputFont) !important;
+    background: var(--od-input) !important;
+    color: var(--od-inputText) !important;
+    border: var(--od-borderWidth) solid var(--od-border) !important;
+    border-radius: var(--od-radius) !important;
+    box-shadow: none !important;
+    min-height: var(--od-inputHeight) !important;
+    box-sizing: border-box !important;
+}
+#app [data-od-panel] button,
+#app [data-od-panel] .dice__button,
+#app [data-od-panel] .trade__button,
+#app [data-od-panel] .trade__card-button,
+#app [data-od-panel] .modal__button,
+#app [data-od-panel] .button,
+#app [data-od-panel] .press-button,
+#app [data-od-panel] .button-container {
+    background: var(--od-button) !important;
+    border: var(--od-borderWidth) solid var(--od-border) !important;
+    border-radius: var(--od-radius) !important;
+    color: var(--od-buttonText) !important;
+    box-shadow: none !important;
+    font-size: var(--od-font) !important;
+    text-transform: none !important;
+}
+#app [data-od-panel] button:hover,
+#app [data-od-panel] .dice__button:hover,
+#app [data-od-panel] .trade__button:hover,
+#app [data-od-panel] .trade__card-button:hover,
+#app [data-od-panel] .modal__button:hover {
+    background: var(--od-accent) !important;
+}
+#app [data-od-panel] .dice-queries__item,
+#app [data-od-panel] .dice-game__player-card,
+#app [data-od-panel] .dice-sa__item,
+#app [data-od-panel] .dice-types__item,
+#app [data-od-panel] .trade__card,
+#app [data-od-panel] .trade__attention,
+#app [data-od-panel] .trade-items-checkbox,
+#app [data-od-panel] .trade-items__item,
+#app [data-od-panel] .modal__card {
+    background: var(--od-input) !important;
+    color: var(--od-listText) !important;
+    border: var(--od-borderWidth) solid var(--od-border) !important;
+    border-radius: var(--od-radius) !important;
+    box-shadow: none !important;
+}
+#app [data-od-panel] .trade__card-text,
+#app [data-od-panel] .trade__card-name,
+#app [data-od-panel] .trade__attention-row,
+#app [data-od-panel] .trade-items__subtitle,
+#app [data-od-panel] .trade-items-exchange__subtitle,
+#app [data-od-panel] .dice-game__player-status--text,
+#app [data-od-panel] .dice-queries__item-title {
+    color: var(--od-text) !important;
+    font-size: var(--od-font) !important;
+}
+#app [data-od-panel] .trade-skin__bg {
+    display: none !important;
+}
+#app [data-od-panel] .selected,
+#app [data-od-panel] .dice-sa__item:hover,
+#app [data-od-panel] .dice-types__item:hover {
+    background-color: var(--od-accent) !important;
+}
+#app [data-od-panel] .dice__content,
+#app [data-od-panel] .dice-modal__content,
+#app [data-od-panel] .trade__cards {
+    color: var(--od-text) !important;
+    font-size: var(--od-font) !important;
+}
+#app [data-od-panel][data-od-colors='replace'] * {
+    color: var(--od-text) !important;
+}
+#app [data-od-panel][data-od-animations='off'][class*='-leave-'],
+#app [data-od-panel][data-od-animations='off'] [class*='-leave-'] {
+    visibility: hidden !important;
+    pointer-events: none !important;
+}

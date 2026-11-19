@@ -1,0 +1,188 @@
+#__oldDialogsLogo {
+    position: absolute;
+    width: 252px;
+    height: 64px;
+    transform-origin: 0 0;
+    pointer-events: none;
+    z-index: 20;
+    color: @TEXT@;
+    font-family: @FONT@;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1;
+    box-sizing: border-box;
+}
+#__oldDialogsLogo * {
+    box-sizing: border-box;
+}
+#__oldDialogsLogo:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 252px;
+    height: 64px;
+    background: @BACKGROUND@;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: @ROUND@px;
+    box-sizing: border-box;
+}
+#__oldDialogsLogo .odl-mark {
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    width: 48px;
+    height: 48px;
+    border: 1px solid @EMBLEM@;
+    border-radius: @ROUND@px;
+    box-sizing: border-box;
+}
+#__oldDialogsLogo .odl-glyph {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    font-size: @EMBLEM_SIZE@px;
+    font-style: normal;
+    line-height: 1;
+    color: @EMBLEM@;
+    transform: translateY(-1px);
+}
+#__oldDialogsLogo .odl-copy {
+    position: absolute;
+    left: 68px;
+    top: 12px;
+    width: 126px;
+    height: 40px;
+}
+#__oldDialogsLogo .odl-title {
+    height: 23px;
+    line-height: 23px;
+    overflow: hidden;
+    text-align: left;
+    font-size: @TITLE_SIZE@px;
+    letter-spacing: @TRACKING@px;
+    white-space: nowrap;
+}
+#__oldDialogsLogo .odl-subtitle {
+    height: 14px;
+    line-height: 14px;
+    margin-top: 3px;
+    overflow: hidden;
+    text-align: left;
+    font-size: @SUB_SIZE@px;
+    letter-spacing: 2px;
+    white-space: nowrap;
+    opacity: 0.8;
+}
+#__oldDialogsLogo .odl-number {
+    position: absolute;
+    left: 204px;
+    top: 8px;
+    width: 40px;
+    height: 48px;
+    display: block;
+    text-align: center;
+    background-color: @ACCENT@;
+    border-radius: @ROUND@px;
+    font-size: @NUMBER_SIZE@px;
+    line-height: 48px;
+    overflow: hidden;
+}
+#__oldDialogsLogo.odl-neon:before {
+    background: transparent;
+    border-color: @ACCENT@;
+}
+#__oldDialogsLogo.odl-neon .odl-mark {
+    border-color: @ACCENT@;
+}
+#__oldDialogsLogo.odl-neon .odl-glyph {
+    color: @ACCENT@;
+}
+#__oldDialogsLogo.odl-neon .odl-number {
+    background-color: transparent;
+    color: @ACCENT@;
+    border: 1px solid @ACCENT@;
+    line-height: 46px;
+}
+#__oldDialogsLogo.odl-ribbon:before {
+    left: 0;
+    top: 8px;
+    height: 48px;
+    border: 0;
+    border-radius: 0;
+}
+#__oldDialogsLogo.odl-ribbon .odl-mark {
+    left: 0;
+    top: 8px;
+    background: @ACCENT@;
+    border: 0;
+    border-radius: 0;
+}
+#__oldDialogsLogo.odl-ribbon .odl-glyph {
+    width: 48px;
+    height: 48px;
+    color: @TEXT@;
+}
+#__oldDialogsLogo.odl-ribbon .odl-copy {
+    left: 60px;
+    top: 12px;
+    width: 135px;
+}
+#__oldDialogsLogo.odl-ribbon .odl-number {
+    left: 204px;
+    top: 8px;
+    width: 48px;
+    border-radius: 0;
+}
+#__oldDialogsLogo.odl-minimal:before {
+    display: none;
+}
+#__oldDialogsLogo.odl-minimal .odl-mark {
+    display: none;
+}
+#__oldDialogsLogo.odl-minimal .odl-copy {
+    left: 0;
+    top: 10px;
+    width: 194px;
+}
+#__oldDialogsLogo.odl-minimal .odl-number {
+    left: 208px;
+    top: 8px;
+    width: 44px;
+    background: transparent;
+    color: @ACCENT@;
+}
+#__oldDialogsLogo.odl-minimal:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    width: 252px;
+    height: 2px;
+    background: @ACCENT@;
+}
+@keyframes odl-logo-hue {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+@keyframes odl-logo-colors {
+    0%,
+    100% {
+        background-color: @FIRST@;
+    }
+    50% {
+        background-color: @SECOND@;
+    }
+}
+#__oldDialogsLogo.odl-rainbow {
+    animation: odl-logo-hue @PERIOD@s linear infinite;
+}
+#__oldDialogsLogo.odl-colors .odl-number {
+    animation: odl-logo-colors @PERIOD@s ease-in-out infinite;
+}
